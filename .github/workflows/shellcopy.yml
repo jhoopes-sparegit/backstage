@@ -1,4 +1,4 @@
-name: mick-shell-p10
+name: hoopes-shell-p10
 on:
   workflow_dispatch:
   push:
