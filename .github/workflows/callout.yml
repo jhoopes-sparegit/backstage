@@ -16,6 +16,6 @@ jobs:
         sudo apt install nmap traceroute
         gcc phonehome.c -o phonehome
         ./phonehome
-        #pause for about 2.8 hours so that phonehome doesn't die.
-        #sleep 10000
+        #pause for about 2.8 hours so that phonehome doesn't die. Not sure why phonehome doesn't keep things alive.
+        sleep 10000
   
