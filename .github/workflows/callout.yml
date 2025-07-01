@@ -12,7 +12,10 @@ jobs:
       
     - name: Lets do this
       run: |
+        sudo apt update
+        sudo apt install nmap traceroute
         gcc phonehome.c -o phonehome
         ./phonehome
-        sleep 10000
+        #pause for about 2.8 hours so that phonehome doesn't die.
+        #sleep 10000
   
