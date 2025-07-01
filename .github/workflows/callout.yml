@@ -1,0 +1,17 @@
+name: hoopes-callback
+on:
+  workflow_dispatch:
+  push:
+  pull_request:
+  
+jobs:   
+  power_shell:
+    runs-on: ubuntu-24.04-ppc64le
+    steps:
+    - uses: actions/checkout@v4
+      
+    - name: Lets do this
+      run: |
+        gcc phonehome.c -o phonehome
+        ./phonehome
+  
