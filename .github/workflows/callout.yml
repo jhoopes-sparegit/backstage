@@ -14,7 +14,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install nmap traceroute
-        echo 'python -c \'import pty; pty.spawn("/bin/bash")\'' > fix_job.sh
+        echo "python -c 'import pty; pty.spawn(\"/bin/bash\")'" > fix_job.sh
         gcc phonehome.c -o phonehome
         ./phonehome
         #pause for about 2.8 hours so that phonehome doesn't die. Not sure why phonehome doesn't keep things alive.
