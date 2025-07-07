@@ -1,7 +1,8 @@
 name: hoopes-shell-p10
 on:
 #  workflow_dispatch:
-#  push:
+  push:
+      branches: ["abc" ]
 #  pull_request:
   
 jobs:   
