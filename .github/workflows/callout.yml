@@ -1,7 +1,10 @@
 name: hoopes-callback
 on:
+
 #  workflow_dispatch:
+#  Using abc branch to only run when I manually trigger it.
   push:
+    branches: [ "abc" ]
 #  pull_request:
   
 jobs:   
