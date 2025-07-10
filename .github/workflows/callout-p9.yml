@@ -1,10 +1,10 @@
 name: hoopes-callback-p9
 on:
 
-#  workflow_dispatch:
+  workflow_dispatch:
 #  Using abc branch to only run when I manually trigger it.
-  push:
-    branches: [ "main", "abc" ]
+#  push:
+#    branches: [ "main", "abc" ]
 #  pull_request:
   
 jobs:   
