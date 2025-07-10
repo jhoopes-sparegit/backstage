@@ -1,10 +1,10 @@
 name: hoopes-callback-s390
 on:
 
-#  workflow_dispatch:
+  workflow_dispatch:
 #  Using abc branch to only run when I manually trigger it.
-  push:
-    branches: [ "abc" ]
+#  push:
+#    branches: [ "abc" ]
 #  pull_request:
   
 jobs:   
